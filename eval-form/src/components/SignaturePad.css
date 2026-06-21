@@ -1,0 +1,59 @@
+.signature-pad-wrapper {
+  position: relative;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  background: #fafbfc;
+  overflow: hidden;
+}
+
+.signature-canvas {
+  display: block;
+  width: 100%;
+  height: 160px;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.signature-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: #94a3b8;
+  font-style: italic;
+  pointer-events: none;
+  user-select: none;
+}
+
+.signature-pad-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 12px;
+  border-top: 1px solid #e2e8f0;
+  background: rgba(248, 250, 252, 0.8);
+}
+
+.signature-clear-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #64748b;
+  background: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.signature-clear-btn:hover:not(:disabled) {
+  color: #ef4444;
+  border-color: #fca5a5;
+  background: rgba(239, 68, 68, 0.05);
+}
+
+.signature-clear-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

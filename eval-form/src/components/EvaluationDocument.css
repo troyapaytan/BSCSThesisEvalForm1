@@ -1,0 +1,413 @@
+/* Document Wrapper */
+.doc-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+/* Document Page — paper-like */
+.doc-page {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  padding: 48px 52px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* Document Header */
+.doc-header {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.doc-main-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0f172a;
+  margin: 0 0 12px 0;
+}
+
+.doc-thesis-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #334155;
+  font-style: italic;
+  margin: 0 0 20px 0;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.doc-meta-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: #64748b;
+  padding: 0 8px;
+}
+
+/* Divider */
+.doc-divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 24px 0;
+}
+
+/* Section */
+.doc-section {
+  margin-bottom: 4px;
+}
+
+.doc-section-title {
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #334155;
+  margin: 0 0 16px 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #6366f1;
+  display: inline-block;
+}
+
+.doc-text {
+  font-size: 0.88rem;
+  color: #475569;
+  margin: 0 0 14px 0;
+}
+
+/* Info Grid */
+.doc-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.doc-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.doc-info-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+}
+
+.doc-info-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Tables */
+.doc-metrics-table table,
+.doc-results-table table,
+.doc-error-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+}
+
+.doc-metrics-table th,
+.doc-results-table th,
+.doc-error-table th {
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #64748b;
+  padding: 10px 12px;
+  border-bottom: 2px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.doc-metrics-table td,
+.doc-results-table td,
+.doc-error-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+
+.doc-results-table td {
+  text-align: center;
+}
+
+.doc-results-table th {
+  text-align: center;
+}
+
+.doc-results-table td:first-child,
+.doc-results-table th:first-child {
+  text-align: left;
+  width: 36px;
+}
+
+.td-period {
+  text-align: left !important;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.row-flagged {
+  background: rgba(239, 68, 68, 0.04);
+}
+
+.td-rating {
+  font-weight: 700;
+  font-size: 0.78rem;
+  border-radius: 4px;
+}
+
+.td-rating.good { color: #16a34a; }
+.td-rating.ok { color: #d97706; }
+.td-rating.poor { color: #dc2626; }
+
+.td-notes {
+  text-align: left !important;
+  max-width: 180px;
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.doc-table-legend {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+/* Certification & Signature */
+.doc-signature-section {
+  margin-top: 8px;
+}
+
+.doc-certification-text {
+  font-size: 0.88rem;
+  color: #334155;
+  line-height: 1.8;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.doc-signature-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.doc-signature-area {
+  width: 100%;
+  max-width: 420px;
+}
+
+.doc-signed-display {
+  background: #fafbfc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doc-signature-image {
+  max-width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+}
+
+.doc-signature-label {
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+}
+
+.doc-sig-line {
+  height: 1px;
+  background: #1e293b;
+  margin-bottom: 8px;
+}
+
+.doc-sig-name {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 2px 0;
+}
+
+.doc-sig-affiliation {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin: 0 0 2px 0;
+}
+
+.doc-sig-date {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.btn-confirm-signature {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  background: #6366f1;
+  color: white;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.3);
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-confirm-signature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(99, 102, 241, 0.4);
+}
+
+.doc-signed-badge {
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #16a34a;
+  padding: 12px 24px;
+  background: rgba(34, 197, 94, 0.08);
+  border: 1.5px solid rgba(34, 197, 94, 0.2);
+  border-radius: 12px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* Actions below document */
+.doc-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.btn-print {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 14px;
+  background: #22c55e;
+  color: white;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 16px rgba(34, 197, 94, 0.3);
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-print:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(34, 197, 94, 0.4);
+}
+
+.btn-restart {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #475569;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-restart:hover {
+  border-color: #cbd5e1;
+  background: white;
+  transform: translateY(-1px);
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .doc-wrapper {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .doc-page {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 24px 32px;
+  }
+
+  .btn-confirm-signature,
+  .signature-pad-actions {
+    display: none !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .doc-page {
+    padding: 28px 20px;
+    border-radius: 0;
+  }
+
+  .doc-main-title {
+    font-size: 1.2rem;
+  }
+
+  .doc-thesis-title {
+    font-size: 0.85rem;
+  }
+
+  .doc-meta-row {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+
+  .doc-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doc-results-table,
+  .doc-error-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .doc-results-table table,
+  .doc-error-table table {
+    min-width: 500px;
+  }
+}
